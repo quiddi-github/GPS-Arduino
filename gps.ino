@@ -29,6 +29,13 @@ void loop(){
       Serial.print(gps.location.lat(), 6);
       Serial.print(" Longitude= "); 
       Serial.println(gps.location.lng(), 6);
+      Serial.print("v= "); 
+      Serial.print(gps.speed.kmph());
+      Serial.println("km/h");
+      Serial.print(gps.time.hour());
+      Serial.print(":");
+      Serial.print(gps.time.minute());
+      Serial.println("Uhr"); 
     }
   }
 }
